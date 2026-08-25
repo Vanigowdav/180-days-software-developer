@@ -1,0 +1,35 @@
+<!-- Boolean Attributes : 
+     - They only need the attribute name (no="value is required")
+     - Presence = TRUE (the feature is turned ON)
+     - Absence = FALSE (the feature is turned OFF)-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Boolean Attributes</title>
+</head>
+<body>
+    <h1> HTMl Boolean Attributes</h1>
+    <!-- 1. CHECKED ATTRIBUTE: Used on checkboxes or radio button to make them selected by default.-->
+    <p>
+        <input type="checkbox" checked>
+        Checkbox (Checked by default because 'checked' is present)
+    </p>
+    <!-- 2. DISABLED ATTRIBUTE : Locks the element so users cannot click or type inside it.-->
+    <p>
+        <input type="text" value="You cannot edit this" disabled>
+        Text Input (Locked because 'disabled' is present)
+    </p>
+     <!-- 3. READONLY ATTRIBUTE : User can see and select the text, but they cannot change it.-->
+    <p>
+        <input type="text" value="Rea-only text" readonly>
+        Text Input (View-only because 'readonly' is present)
+    </p>
+    <!-- 4. REQUIRED ATTRIBUTE : Forces the user to fill out this field before submitting a form.-->
+     <p>
+        <input type="text" placeholder="Must fill this out..." required>
+        Text Input (Mandatory because 'required' is present)
+    </p>
+</body>
+</html>
