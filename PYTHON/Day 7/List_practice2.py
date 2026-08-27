@@ -15,4 +15,5 @@ print("Total number of odd are:",len(odd))
 my_list = ["apple", "orange", "banana", "mango"]
 print(my_list[::-1])
 
+
     
