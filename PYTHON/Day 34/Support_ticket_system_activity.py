@@ -45,8 +45,8 @@ class TicketSystem:
             print(val)
 
 
-t1 = BugTicket(2, "Toxic", "high", "full")
-f1 = FeatureRequestTicket(3, "martin", "medium", "user")
+t1 = BugTicket(102, "Login page crashes on submit", "high", "critical")
+f1 = FeatureRequestTicket(129, "Add dark mode support", "medium", "vani")
 tic = TicketSystem()
 tic.add_ticket(t1)
 tic.add_ticket(f1)
