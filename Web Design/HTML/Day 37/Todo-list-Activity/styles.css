@@ -1,0 +1,85 @@
+body {
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+
+/* Card - centered using margin auto, sized with width */
+.card {
+  width: 450px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 30px;
+}
+
+.card h1 {
+  text-align: center;
+  color: black;
+}
+
+/* Remove default list styling on the outer list */
+.todo-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each todo item is a block box with background, padding and margin */
+.todo-item {
+  display: block;
+  background-color: honeydew;
+  border: 1px solid darkseagreen;
+  padding: 16px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.todo-header {
+  display: block;
+  font-size: 16px;
+  color: black;
+}
+
+/* checkbox and text side by side (inline elements, no forced new line) */
+.todo-header input {
+  width: 16px;
+  height: 16px;
+}
+
+.todo-header span {
+  margin-left: 8px;
+}
+
+/* Sub list uses square bullets, indented inside the item */
+.todo-sub {
+  list-style-type: square;
+  list-style-position: inside;
+  margin-top: 10px;
+  margin-bottom: 0;
+  padding-left: 20px;
+}
+
+.todo-sub li {
+  margin-top: 6px;
+}
+
+/* Link states, in the correct LVHA order */
+.todo-sub a:link {
+  color: blue;
+  text-decoration: none;
+}
+
+.todo-sub a:visited {
+  color: blue;
+}
+
+.todo-sub a:hover {
+  text-decoration: underline;
+}
+
+.todo-sub a:active {
+  color: navy;
+}
