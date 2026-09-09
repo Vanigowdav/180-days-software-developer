@@ -1,0 +1,99 @@
+/* ============================
+   Overall page setup
+   ============================ */
+body {
+  background-color: lightgray;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 40px;
+}
+
+/* ============================
+   ALIGNMENT
+   The card is centered on the page using margin auto,
+   and text inside is aligned consistently (left, except
+   the title/subtitle which are centered).
+   ============================ */
+.card {
+  width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 30px;
+}
+
+/* ============================
+   IMAGES
+   Fixed width/height keeps the image from being
+   stretched or distorted. alt text is set in the HTML
+   for accessibility.
+   ============================ */
+.recipe-image {
+  width: 100%;
+  height: 250px;
+  border: 1px solid darkgray;
+}
+
+/* ============================
+   SCALE + HIERARCHY
+   The title (h1) is the largest text on the page, so
+   it's the first thing the eye notices. The subtitle is
+   smaller and lighter. Section headings (h2) are smaller
+   than the title but bigger than normal text, showing
+   their place in the hierarchy: h1 > h2 > paragraph/list text.
+   ============================ */
+.card h1 {
+  font-size: 32px;
+  color: black;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: gray;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 30px;
+}
+
+.card h2 {
+  font-size: 20px;
+  color: black;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/* ============================
+   CONTRAST
+   Dark text (black/darkslategray) on a white background
+   keeps everything easy to read.
+   ============================ */
+.ingredient-list,
+.steps-list {
+  color: darkslategray;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* ============================
+   WHITESPACE
+   Padding/margin around list items and sections gives the
+   content room to breathe instead of feeling cramped.
+   ============================ */
+.ingredient-list {
+  padding-left: 20px;
+  margin-bottom: 20px;
+}
+
+.steps-list {
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+
+.ingredient-list li,
+.steps-list li {
+  margin-bottom: 8px;
+}
