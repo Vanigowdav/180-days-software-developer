@@ -1,0 +1,46 @@
+body{
+    background-color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 2rem;
+}
+header{
+    text-align: center;
+} 
+
+img{
+    width: 300px;
+}
+h1{
+    font-size: 1.5rem;
+    text-align: center;
+}
+p{
+    font-size: 1rem;
+    text-align: center;
+}
+hr{
+    border: none;
+    height: 4px;
+    background-color: black;
+}
+main{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+section{
+    width: 30%;
+}
+section h2{
+    font-size: 1.2;
+    text-align: left;
+}
+ul{
+    padding-left: 1.5rem;
+}
+footer{
+    text-align: center;
+    font-size: 1rem;
+}
