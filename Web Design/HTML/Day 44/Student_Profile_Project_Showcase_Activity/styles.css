@@ -1,0 +1,925 @@
+/* =========================================================
+   1. CSS RESET
+   ========================================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   2. BASIC BODY STYLING
+   ========================================================= */
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+
+/* =========================================================
+   3. HEADER
+   ========================================================= */
+
+.header {
+    width: 100%;
+    padding: 20px 8%;
+
+    background: white;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+
+    /* Main axis = horizontal */
+    flex-direction: row;
+
+    /* Items placed at opposite ends */
+    justify-content: space-between;
+
+    /* Vertical alignment */
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+
+    z-index: 10;
+}
+
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #2563eb;
+
+    /* TRANSFORM */
+    transition: transform 0.3s ease;
+}
+
+
+/* Transform example */
+.logo:hover {
+    transform: scale(1.1);
+}
+
+
+/* Navigation */
+
+.nav {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 25px;
+}
+
+
+.nav a {
+    text-decoration: none;
+    color: #374151;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    transition: 0.3s;
+}
+
+
+.nav a:hover {
+    background: #eff6ff;
+    color: #2563eb;
+
+    /* TRANSFORM */
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   4. HERO SECTION
+   ========================================================= */
+
+.hero {
+    min-height: 600px;
+
+    padding: 80px 8%;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 60px;
+}
+
+
+.hero-content {
+    max-width: 600px;
+}
+
+
+.small-title {
+    color: #2563eb;
+
+    font-weight: bold;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 10px;
+}
+
+
+.hero h1 {
+    font-size: 64px;
+
+    color: #111827;
+
+    margin-bottom: 5px;
+}
+
+
+.hero h2 {
+    font-size: 28px;
+
+    color: #4b5563;
+
+    margin-bottom: 20px;
+}
+
+
+.description {
+    color: #6b7280;
+
+    margin-bottom: 30px;
+
+    max-width: 550px;
+}
+
+
+/* =========================================================
+   5. BUTTONS
+   ========================================================= */
+
+.buttons {
+    display: flex;
+
+    flex-direction: row;
+
+    align-items: center;
+
+    gap: 15px;
+
+    flex-wrap: wrap;
+}
+
+
+.button {
+    display: inline-block;
+
+    padding: 12px 22px;
+
+    border: 2px solid #2563eb;
+
+    border-radius: 8px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    transition: 0.3s;
+}
+
+
+.primary-button {
+    background: #2563eb;
+
+    color: white;
+}
+
+
+.secondary-button {
+    background: white;
+
+    color: #2563eb;
+}
+
+
+.button:hover {
+    transform: translateY(-4px);
+
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+}
+
+
+/* =========================================================
+   6. PROFILE CARD
+   ========================================================= */
+
+.profile-card {
+    width: 320px;
+
+    padding: 35px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 20px;
+
+    /* Box shadow */
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+
+    text-align: center;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* TRANSFORM */
+.profile-card:hover {
+    transform: translateY(-10px) rotate(1deg);
+}
+
+
+.profile-image {
+    width: 130px;
+
+    height: 130px;
+
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #7c3aed
+    );
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 50px;
+
+    font-weight: bold;
+
+    border: 5px solid #dbeafe;
+}
+
+
+.profile-card h3 {
+    margin-bottom: 10px;
+}
+
+
+.profile-card p {
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   7. COMMON SECTION
+   ========================================================= */
+
+.section {
+    padding: 80px 8%;
+}
+
+
+.section-title {
+    text-align: center;
+
+    font-size: 36px;
+
+    margin-bottom: 10px;
+}
+
+
+.section-description {
+    text-align: center;
+
+    color: #6b7280;
+
+    margin-bottom: 45px;
+}
+
+
+/* =========================================================
+   8. FLEXBOX SKILLS
+   ========================================================= */
+
+.skills-container {
+
+    display: flex;
+
+    /*
+       flex-flow is shorthand for:
+       flex-direction + flex-wrap
+    */
+
+    flex-flow: row wrap;
+
+    /*
+       Main axis alignment
+    */
+    justify-content: center;
+
+    /*
+       Cross axis alignment
+    */
+    align-items: stretch;
+
+    gap: 20px;
+}
+
+
+.skill-card {
+
+    /*
+       BOX MODEL
+       Content + Padding + Border
+    */
+
+    width: 220px;
+
+    padding: 25px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    text-align: center;
+
+    transition: 0.3s;
+}
+
+
+.skill-card:hover {
+
+    /*
+       SCALE TRANSFORM
+    */
+
+    transform: scale(1.05);
+
+    border-color: #2563eb;
+}
+
+
+.skill-icon {
+    font-size: 40px;
+
+    margin-bottom: 10px;
+}
+
+
+.skill-card h3 {
+    margin-bottom: 8px;
+}
+
+
+.skill-card p {
+    color: #6b7280;
+}
+
+
+/* =========================================================
+   9. PROJECT SECTION
+   ========================================================= */
+
+.projects-section {
+    background: #eef4ff;
+}
+
+
+.projects-container {
+
+    display: flex;
+
+    /*
+       Items can move to another row
+       when screen becomes smaller.
+    */
+
+    flex-wrap: wrap;
+
+    /*
+       Main axis alignment
+    */
+
+    justify-content: center;
+
+    /*
+       Cross axis alignment
+    */
+
+    align-items: stretch;
+
+    gap: 25px;
+}
+
+
+/* =========================================================
+   10. PROJECT CARD
+   ========================================================= */
+
+.project-card {
+
+    width: 320px;
+
+    background: white;
+
+    border: 1px solid #dbe3ef;
+
+    border-radius: 15px;
+
+    overflow: hidden;
+
+    transition: transform 0.3s ease;
+
+    /*
+       Box Model:
+       width includes padding and border
+       because of box-sizing: border-box
+    */
+}
+
+
+.project-card:hover {
+
+    /*
+       TRANSFORM
+    */
+
+    transform: translateY(-8px);
+}
+
+
+/* =========================================================
+   11. CSS FILTER
+   ========================================================= */
+
+.project-image {
+
+    height: 180px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    color: white;
+
+    font-size: 35px;
+
+    font-weight: bold;
+
+    /*
+       FILTER
+    */
+
+    filter: saturate(110%);
+
+    transition: 0.3s;
+}
+
+
+.project-card:hover .project-image {
+
+    /*
+       Filter changes when hovering
+    */
+
+    filter: brightness(110%) saturate(130%);
+}
+
+
+/* Different project backgrounds */
+
+.fraud-image {
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #06b6d4
+    );
+}
+
+
+.food-image {
+    background: linear-gradient(
+        135deg,
+        #f97316,
+        #ef4444
+    );
+}
+
+
+.ui-image {
+    background: linear-gradient(
+        135deg,
+        #7c3aed,
+        #ec4899
+    );
+}
+
+
+/* =========================================================
+   12. PROJECT CONTENT
+   ========================================================= */
+
+.project-content {
+
+    padding: 25px;
+}
+
+
+.project-tag {
+
+    display: inline-block;
+
+    padding: 5px 10px;
+
+    margin-bottom: 10px;
+
+    background: #eff6ff;
+
+    color: #2563eb;
+
+    border-radius: 20px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+}
+
+
+.project-content h3 {
+
+    margin-bottom: 10px;
+}
+
+
+.project-content p {
+
+    color: #6b7280;
+
+    margin-bottom: 20px;
+}
+
+
+.project-link {
+
+    color: #2563eb;
+
+    text-decoration: none;
+
+    font-weight: bold;
+}
+
+
+/* =========================================================
+   13. ALIGN-SELF EXAMPLE
+   ========================================================= */
+
+.featured-project {
+
+    /*
+       This individual flex item
+       can have different cross-axis
+       alignment if its parent allows it.
+    */
+
+    align-self: center;
+}
+
+
+/* =========================================================
+   14. CSS PRACTICE LAB
+   ========================================================= */
+
+.practice-section {
+
+    padding: 80px 8%;
+
+    background: #111827;
+
+    color: white;
+
+    display: flex;
+
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+
+.practice-content {
+
+    max-width: 600px;
+}
+
+
+.practice-content h2 {
+
+    font-size: 36px;
+
+    margin-bottom: 15px;
+}
+
+
+.practice-content p {
+
+    color: #d1d5db;
+
+    margin-bottom: 25px;
+}
+
+
+/* =========================================================
+   15. TRANSFORM BUTTON
+   ========================================================= */
+
+.transform-button {
+
+    padding: 12px 25px;
+
+    border: 2px solid white;
+
+    border-radius: 8px;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+
+.transform-button:hover {
+
+    /*
+       Multiple TRANSFORMS
+    */
+
+    transform:
+        translateY(-5px)
+        scale(1.05)
+        rotate(-2deg);
+}
+
+
+/* =========================================================
+   16. PRACTICE BOX
+   ========================================================= */
+
+.practice-box-container {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    min-width: 250px;
+
+    min-height: 200px;
+}
+
+
+.practice-box {
+
+    width: 150px;
+
+    height: 150px;
+
+    /*
+       BOX MODEL
+    */
+
+    padding: 30px;
+
+    border: 5px solid white;
+
+    margin: 20px;
+
+    /*
+       Flexbox
+    */
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    /*
+       TRANSFORM
+    */
+
+    transform: rotate(5deg);
+
+    /*
+       GRADIENT
+    */
+
+    background: linear-gradient(
+        135deg,
+        #2563eb,
+        #9333ea
+    );
+
+    /*
+       FILTER
+    */
+
+    filter: brightness(105%);
+
+    transition: 0.3s;
+}
+
+
+.practice-box:hover {
+
+    transform:
+        rotate(0deg)
+        scale(1.15);
+}
+
+
+/* =========================================================
+   17. MARGIN COLLAPSING DEMONSTRATION
+   ========================================================= */
+
+.margin-demo {
+
+    margin-top: 20px;
+
+    margin-bottom: 30px;
+}
+
+
+/*
+   Vertical margins can collapse in
+   certain situations.
+
+   Parent/child relationships and
+   surrounding content can affect
+   whether margins collapse.
+*/
+
+
+/* =========================================================
+   18. RESPONSIVE DESIGN
+   ========================================================= */
+
+@media (max-width: 768px) {
+
+    .header {
+
+        padding: 15px 5%;
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+
+    .hero {
+
+        flex-direction: column;
+
+        text-align: center;
+
+        padding: 60px 5%;
+    }
+
+
+    .hero h1 {
+
+        font-size: 45px;
+    }
+
+
+    .hero h2 {
+
+        font-size: 23px;
+    }
+
+
+    .buttons {
+
+        justify-content: center;
+    }
+
+
+    .profile-card {
+
+        width: 100%;
+
+        max-width: 320px;
+    }
+
+
+    .skills-container {
+
+        flex-flow: row wrap;
+
+        justify-content: center;
+    }
+
+
+    .practice-section {
+
+        flex-direction: column;
+
+        text-align: center;
+    }
+
+}
+
+
+/* =========================================================
+   19. SMALL MOBILE SCREEN
+   ========================================================= */
+
+@media (max-width: 480px) {
+
+    .nav {
+
+        flex-direction: column;
+
+        gap: 5px;
+    }
+
+
+    .hero {
+
+        padding: 40px 5%;
+    }
+
+
+    .hero h1 {
+
+        font-size: 38px;
+    }
+
+
+    .section {
+
+        padding: 60px 5%;
+    }
+
+
+    .skill-card {
+
+        width: 100%;
+    }
+
+
+    .project-card {
+
+        width: 100%;
+    }
+
+}
+
+
+/* =========================================================
+   20. FOOTER
+   ========================================================= */
+
+.footer {
+
+    padding: 25px;
+
+    background: #030712;
+
+    color: #9ca3af;
+
+    text-align: center;
+}
