@@ -1,13 +1,5 @@
 # CSS Variables
 
-## Part B — Working with CSS Variables
-
-**freeCodeCamp Responsive Web Design v9**
-
-**Progress: 35 of 120 steps complete**
-
----
-
 # 1. What Are CSS Custom Properties?
 
 CSS Custom Properties are commonly called **CSS Variables**.

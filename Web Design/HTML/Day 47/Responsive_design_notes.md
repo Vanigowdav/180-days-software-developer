@@ -1,13 +1,5 @@
 # Responsive Design
 
-## Part A — Best Practices for Responsive Web Design
-
-**freeCodeCamp Responsive Web Design v9**
-
-**Progress: 37 of 37 steps complete ✅**
-
----
-
 # 1. What Is Responsive Web Design?
 
 Responsive Web Design is an approach to designing websites so that the layout and content automatically adapt to different screen sizes.
