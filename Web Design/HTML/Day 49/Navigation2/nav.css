@@ -1,0 +1,57 @@
+body{
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #f5b8e0, #b8a8e8, #a8c8e8);
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+h1{
+    text-align: center;
+    color: #1a1a1a;
+    padding-top: 30px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    border-radius: 50px;           /* fully rounded pill shape */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+    overflow: hidden;
+}
+nav a{
+    text-decoration: none;
+    color: #333;
+    padding: 18px 28px;
+    font-size: 18px;
+    display: inline-block;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* the underline itself — hidden by default */
+nav a::after{
+    content: "";
+    position: absolute;
+    left: 28px;
+    right: 28px;
+    bottom: 12px;
+    height: 4px;
+    border-radius: 2px;
+    background: deeppink;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+nav a:hover{
+    color: #000;
+}
+nav a:hover::after{
+    transform: scaleX(1);
+}

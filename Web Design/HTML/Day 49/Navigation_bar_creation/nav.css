@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background: #fff;
+    box-sizing: border-box;
+}
+h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 30px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 15px;
+}
+nav{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+nav a{
+    text-decoration: none;
+    color: #000;
+    background: lightblue;
+    border-radius: 6px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: background 0.3s ease, transform 0.2s ease;
+    display: inline-block;
+    padding: 12px 4px;
+}  
+nav a:hover{
+    background: linear-gradient(0, rgb(202, 22, 187), rgb(253, 175, 188));    /* darker green on hover */
+    transform: translateY(-2px);
+}
